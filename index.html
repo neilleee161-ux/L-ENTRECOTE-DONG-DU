@@ -1,63 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>L’Entrecôte – Social Meating</title>
-<style>
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #fafafa;
-    color: #222;
-    text-align: center;
-    padding: 40px 20px;
-  }
-  h1 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-  }
-  p {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  a {
-    display: block;
-    margin: 12px auto;
-    padding: 14px 24px;
-    width: 80%;
-    max-width: 300px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    transition: 0.3s ease;
-  }
-  .maps { background-color: #4285F4; color: white; }
-  .tripadvisor { background-color: #34A853; color: white; }
-  .tiktok { background-color: #000; color: white; }
-  a:hover { opacity: 0.8; transform: scale(1.02); }
-  footer {
-    margin-top: 60px;
-    font-size: 13px;
-    color: #aaa;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L’ENTRECÔTE – Social Meating</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      background: #ffffffcc;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    h1 span {
+      color: #b22222;
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .emoji {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #b22222;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: #7a1010;
+      text-decoration: underline;
+    }
+
+    .links {
+      margin: 20px 0;
+    }
+
+    .divider {
+      margin: 30px auto;
+      width: 50px;
+      height: 2px;
+      background-color: #b22222;
+      opacity: 0.5;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 20px;
+    }
+
+    .lang {
+      margin-top: 25px;
+      font-style: italic;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="emoji">🥩</div>
+    <h1><span>L’ENTRECÔTE</span> – Social Meating</h1>
 
-  <h1>🥩 L’Entrecôte – Social Meating</h1>
-  <p>Thank you for choosing our restaurant for your meal. My name is Nguyen, it is my pleasure to serve you. We are very happy that you came and hope you had a great dining experience. I would like you to take a moment to review our restaurant.</p>
+    <p>Thank you for choosing our restaurant for your meal.</p>
+    <p>My name is <strong>Nguyen</strong> — it is my pleasure to serve you.</p>
+    <p>We are very happy that you came and hope you had a great dining experience.</p>
+    <p>Please take a moment to review our restaurant.</p>
 
-  <a href="https://maps.app.goo.gl/ZB1ubRgi6xkxrEGY6?g_st=ipc" class="maps">📍 Review us on Google Maps</a>
-  <a href="https://www.tripadvisor.com/Restaurant_Review-g293925-d28156327-Reviews-L_Entrecote_Social_Meating-Ho_Chi_Minh_City.html" class="tripadvisor">⭐ Review on TripAdvisor</a>
-  <a href="https://vt.tiktok.com/ZSH77TRV2a4Lu-YOtx6/?poisharing=L%25E2%2580%2599Entrecote---Social-Meating" class="tiktok">🎵 Location on TikTok</a>
-  <p>Thank you so much and see you again</p>
-  <footer>
-    © 2025 L’Entrecôte – Social Meating | Neil
-  </footer>
+    <div class="links">
+      <p>📍 <a href="#">Review us on Google Maps</a></p>
+      <p>⭐ <a href="#">Review on TripAdvisor</a></p>
+      <p>🎵 <a href="#">Location on TikTok</a></p>
+    </div>
 
+    <div class="divider"></div>
+
+    <div class="lang">
+      <p><strong>VI / Tiếng Việt</strong></p>
+      <p>Cảm ơn bạn đã chọn nhà hàng của chúng tôi cho bữa ăn hôm nay.</p>
+      <p>Tôi là <strong>Nguyễn</strong>, rất hân hạnh được phục vụ bạn.</p>
+      <p>Chúng tôi rất vui khi được đón tiếp và hy vọng bạn đã có một trải nghiệm tuyệt vời.</p>
+      <p>Xin mời bạn dành chút thời gian để đánh giá nhà hàng nhé.</p>
+
+      <div class="links">
+        <p>📍 <a href="#">Đánh giá trên Google Maps</a></p>
+        <p>⭐ <a href="#">Đánh giá trên TripAdvisor</a></p>
+        <p>🎵 <a href="#">Vị trí trên TikTok</a></p>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 L’Entrecôte – Social Meating | Designed by Neil
+    </footer>
+  </div>
 </body>
 </html>
